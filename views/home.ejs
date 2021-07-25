@@ -43,7 +43,7 @@
                         
 
                     </select></th>
-                      <td > <input type="date" name="date" required></th>
+                      
                       <td ><input type="submit"  class="btn btn-success"id="add" value="ADD TASK"></th>
                       
                     </tr>
@@ -64,7 +64,7 @@
                               <th>Select</th>
                               <th>Task</th>
                               <th>Category</th>
-                            <th>due date</th>
+                            
                             </tr>
                           </thead>
                         <% for(let i of task) { %>
@@ -73,7 +73,7 @@
                                <td> <input type="checkbox" name="<%= i._id %>" ></td>
                                <td> <p id="task-description"><%= i.description %></td>
                                 <td><p id="task-category"></p>: <%= i.category %></td>
-                                <td><p id="due-date">: <%= i.date %></p></td>
+                                
                 </tr>
                     
                         <% } %>

@@ -46,7 +46,7 @@ app.post('/create-task', function(req, res){
     Task.create({
         description: req.body.description,
         category: req.body.category,
-        date: req.body.date
+        
         }, function(err, newtask){
         if(err){console.log('error in creating task', err); return;}
         
